@@ -1,0 +1,194 @@
+/* < - - - - - - - - - - COMMON STYLES - - - - - - - - - - > */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto400.woff2') format('woff2'),
+    url('../fonts/Roboto400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto500.woff2') format('woff2'),
+    url('../fonts/Roboto500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto900.woff2') format('woff2'),
+    url('../fonts/Roboto900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: top;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #445964;
+  background-color: #fbfbfb;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.main-page {
+  flex-grow: 1;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 15px auto 0;
+  box-shadow: 0 0 15px 0 #00000033;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.wrapper-inner {
+  padding: 0 63px;
+}
+
+.page-title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #dc143c;
+}
+
+.page-title-link:visited,
+.page-title-link:hover,
+.page-title-link:active {
+  color: #dc143c;
+}
+
+.page-subtitle {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border-left: 15px solid #dc143c;
+}
+
+.page-subtitle-mb {
+  margin-bottom: 25px;
+}
+
+.page-descr {
+  color: #dc143c;
+}
+
+.section-text {
+  
+}
+
+.section-subtext {
+  
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* < - - - - - - - - - - MAIN STYLES - - - - - - - - - - > */
+
+/* HEADER */
+
+.header {
+  padding-top: 50px;
+  margin-bottom: 63px;
+  flex-direction: column;
+}
+
+/* MAIN */
+/* SECTION LESSONS */
+.lessons__item {
+  margin-bottom: 25px;
+}
+
+.lessons__item:last-child {
+  margin-bottom: 0;
+}
+
+.lessons__item-mr {
+  margin-right: 35px;
+}
+
+.lesson__item-pt {
+  padding-top: 35px;
+}
+
+.lesson__item-fs {
+  font-size: 16px;
+}
+
+.just {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.direction {
+  flex-direction: column;
+}
