@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task2.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 5: Работа со строками</h3>
+    <p>Задание 2: внести изменения в строку, сформированную в задании 1:
+    </p>
+    <ol>
+      <li>
+        C помощью метода replaceAll() вам необходимо изменить в переменной myInfoText все слова “JavaScript” на те же слова, только строчными буквами (“javascript”). Присвойте переменной myInfoText новое значение с измененными словами “JavaScript”.
+      </li>
+      <li>
+        Также с помощью replaceAll() в строке myInfoText необходимо заменить все совпадения со строкой "курс" на "КУРС".
+      </li>
+      <li>
+        Выведите итоговую строку myInfoText в консоль.
+      </li>
+      <li>
+        Выведите в консоль длину строки myInfoText.
+      </li>
+      <li>
+        Выведите в консоль первый и последний символы строки myInfoText. Чтобы получить индекс последнего символа, требуется от длины строки вычесть единицу.
+      </li>
+    </ol>
+    <p>Код:<pre><code>
+      const myName = "Андрей";
+      const programmingLanguage = "JavaScript";
+      const courseCreatorName = "Владилен";
+      const reasonText = "я хочу делать реальный продукт";
+      const numberOfMonth = 0;
+
+      let myInfoText = `Всем привет! Меня зовут ${myName}. Сейчас я изучаю язык программирования ${programmingLanguage} на курсе по ${programmingLanguage} у ${courseCreatorName}. 
+      Я хочу стать веб-разработчиком, потому что ${reasonText}. До этого я изучал ${programmingLanguage} ${numberOfMonth} месяцев. 
+      Я уверен, что пройду данный курс до конца!`;
+
+      myInfoText = myInfoText.replaceAll("JavaScript", "javascript");
+      myInfoText = myInfoText.replaceAll("курс", "КУРС");
+
+      console.log(myInfoText);
+      console.log(myInfoText.length);
+      console.log(myInfoText[0], myInfoText[myInfoText.length-1]);
+      </code></pre>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../../styles/style.css">
+    <title>Result | School - практика</title>
+    <script src="task5.js" defer></script>
+  </head>
+  <body>
+    <h1 class="page-title">Result | School - практика</h1>
+    <h2 class="page-subtitle page-subtitle-mb">Модуль 1. База JavaScript</h2>
+    <h3 class="page-subtitle page-descr">Урок 5: Работа со строками</h3>
+    <p>Акцент: функция <code class="code-style">prompt()</code>, метод <code>.trim()</code>, объект <code>Number()</code>, метод <code>.slice()</code></p>
+    <p>Задание 5: создать программу, которая по введенным пользователем числам и строке будет обрезать эту строку.</p>
+    <p>Код:<pre><code>
+      const userString = prompt("Введите текст для обрезки").trim();
+      const startSliceIndex = Number(prompt("Введите индекс, с которого нужно начать обрезку строки").trim());
+      const endSliceIndex = Number(prompt("Введите индекс, которым нужно закончить обрезку строки").trim());
+
+      const finalString = userString.slice(startSliceIndex, endSliceIndex);
+
+      alert(`Результат: ${finalString}`);
+      </code></pre>
+    </p>
+  </body>
+</html>
