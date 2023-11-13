@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task4.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 7: Debug</h3>
+    <p>Работа с <code>console.log()</code> для Debug.</p>
+    <p>Задание 3: Исправьте все ошибки, чтобы программа работала правильно. Также выполните следующие условия: баг должен быть исправлен при помощи console.log() либо debugger, в коде должен присутствовать минимум один console.log() либо debugger.</p>
+    <p>Код:<pre><code>
+      let numbers = [10, 4, 100, -5, 54, 2]
+      let sum = 0;
+
+      // Через цикл for
+      for (let i = 0; i < numbers.length; i += 1) {
+          numbers[i] = numbers[i] ** 3;
+          sum += numbers[i];
+      } 
+      console.log(sum); // 1158411
+
+      // Через цикл for of
+      sum = 0;
+      numbers = [10, 4, 100, -5, 54, 2]
+      for (let num of numbers){
+          console.log(`after 'for...of...' cycle`);
+          console.log(num)
+          num = num ** 3;
+          console.log(`in 'for...of...' cycle`);
+          console.log(num)
+          sum += num;
+          
+      } 
+      console.log(sum); // 1003904306910622800
+      </code></pre>
+    </p>
+  </body>
+</html>

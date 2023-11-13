@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task2.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 7: Debug</h3>
+    <p>Работа с <code>console.log()</code> для Debug.</p>
+    <p>Задание 2: Исправьте все ошибки, чтобы программа работала правильно. Также выполните следующие условия: баг должен быть исправлен при помощи console.log() либо debugger, в коде должен присутствовать минимум один console.log() либо debugger.</p>
+    <p>Код:<pre><code>
+      const temperatureInCelsius = Number(prompt('Введите температуру в градусах Цельсия').trim());
+      console.log(temperatureInCelsius);
+      if (temperatureInCelsius === 0) {
+        alert('0 градусов по Цельсию - это температура замерзания воды')
+        console.log('success')
+      } else if (temperatureInCelsius > 0) {
+        alert('Для замерзания воды температура должна быть 0 градусов по Цельсию либо ниже');
+        console.log('no success')
+      }
+
+      const temperatureInFahrenheit = (temperatureInCelsius) * 9 / 5 + 32;
+      alert(`${temperatureInCelsius} градусов по Цельсию - это ${temperatureInFahrenheit} по Фаренгейту.`);
+      console.log(`${temperatureInCelsius} = ${temperatureInFahrenheit}`);
+      </code></pre>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task3.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 7: Debug</h3>
+    <p>Работа с <code>console.log()</code> для Debug.</p>
+    <p>Задание 3: Исправьте все ошибки, чтобы программа работала правильно. Также выполните следующие условия: баг должен быть исправлен при помощи console.log() либо debugger, в коде должен присутствовать минимум один console.log() либо debugger.</p>
+    <p>Код:<pre><code>
+      const salaryOfJuniorDeveloper = 500;
+      const numberOfJuniorDevelopers = 3;
+      let taxPercentage = 13;
+      let totalJuniorDevelopersSalary = 0;
+      //console.log(totalJuniorDevelopersSalary === undefined);
+      for (let i = 0; i < numberOfJuniorDevelopers; i += 1) {
+        const salaryWithTax = salaryOfJuniorDeveloper-(salaryOfJuniorDeveloper*taxPercentage/100);
+        totalJuniorDevelopersSalary += salaryWithTax;
+      }
+      console.log('totalJuniorDevelopersSalary', totalJuniorDevelopersSalary);
+      </code></pre>
+    </p>
+  </body>
+</html>
