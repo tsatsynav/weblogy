@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task3.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 6: Введение в основы JavaScript</h3>
+    <p>Работа с <code>confirm()</code>, <code>if</code> и <code>else</code>.</p>
+    <p>Задание 3: сделать программу "вопрос - ответ".</p>
+    <p>Код:<pre><code>
+      let question_1 = "JavaScript появился в 1995 году?";
+      let question_2 = "Спецификация JavaScript называется ECMAScript?";
+      let question_3 = "JavaScript был создан за 1 месяц?";
+
+      let answer_1 = confirm(question_1);
+      if (answer_1 === true) {
+        alert("Верно!");
+      } else {
+        alert("Вы ответили неправильно! Правильный ответ: JavaScript появился в 1995 году.");
+      }
+
+      let answer_2 = confirm(question_2);
+      if (answer_2 === true) {
+        alert("Верно!");
+      } else {
+        alert("Вы ответили неправильно. Правильный ответ: Спецификация JavaScript называется ECMAScript.");
+      }
+
+      let answer_3 = confirm(question_3);
+      if (answer_3 === false) {
+        alert("Верно! JavaScrip был создан за 10 дней! ");
+      } else {
+        alert("В ответили неправильно. Правильный ответ: JavaScript был создан за 10 дней!");
+      }
+      </code></pre>
+    </p>
+  </body>
+</html>

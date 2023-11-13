@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task4.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 6: Введение в основы JavaScript</h3>
+    <p>Работа с циклами <code>while</code>, <code>do...</code> <code>while</code>.</p>
+    <p>Задание 4: переписать код с цикла <code>for</code> на циклы <code>while</code>, <code>do...</code> <code>while</code>.</p>
+    <p>Код:<pre><code>
+      let i = 0;
+      let c = 0;
+
+      while (i < 3) {
+        let newStudent = prompt("Введите имя нового студента!").trim();  
+        //console.log(`while ${i}`);
+        alert(`Добро пожаловать, ${newStudent}!`);
+        ++i;
+      }
+
+      do {
+        let newStudent = prompt("Введите имя нового студента!").trim();  
+        //console.log(`do while ${c}`);
+        alert(`Добро пожаловать, ${newStudent}!`);
+        ++c;
+      } while (c < 3);
+      </code></pre>
+    </p>
+  </body>
+</html>
