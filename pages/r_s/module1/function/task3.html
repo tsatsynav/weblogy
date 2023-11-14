@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Function: task 3</title>
-  <script src="task3.js"></script>
-</head>
-<body>
-  
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task3.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 8: Функции</h3>
+    <p>Работа с function declaration, function expression, arrow function expression.</p>
+    <p>Задание 3: необходимо создать функцию getDivisorsCount(), которая будет высчитывать количество делителей для переданного числа. Если он не передан или значение было не числом, то из функции необходимо вернуть NaN.</p>
+    <p>Также если number меньше нуля либо является не целым (можно проверить при помощи функции Number.isInteger(number)), то выводите в модальное окно при помощи alert() сообщение “number должен быть целым числом и больше нуля!”.</p>
+    <p>Код:<pre><code>
+      let inputNumber = +(prompt("Введите число:").trim());
+
+      function getDivisorsCount(number) {
+        if (!Number(number)) {
+          return NaN;
+        } else if (number < 0 || number % 1 !== 0) {
+          return `Число должно быть целым и больше нуля!`;
+        }
+        
+        let count = 0;
+        let i = 1;
+        for (i; i <= number; i++) {
+            if (number % i === 0) {
+            count += 1;
+          } 
+        }
+        return count;    
+      }
+
+      alert(getDivisorsCount(inputNumber));
+      </code></pre>
+    </p>
+  </body>
 </html>

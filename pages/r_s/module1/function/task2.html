@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Function: task 2</title>
-  <script src="task2.js"></script>
-</head>
-<body>
-  
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task2.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 8: Функции</h3>
+    <p>Работа с function declaration <code>prompt()</code>, <code>if</code>, <code>else if</code>.</p>
+    <p>Задание 2: Необходимо создать функцию getSumOfNumbers(). Она будет считать сумму от 0 до переданного числа. Выберите любой из 3 типов при создании функции.</p>
+    <p>getSumOfNumbers() принимает в себя 2 параметра: number и type.</p>
+    <p>Параметр number - это число, до которого будет считаться сумма. То есть, если было передано число 10, то функция должна посчитать сумму от 0 до 10 (0 + 1 + 2 + … + 10). Если параметр не передан или значение было не числом, то из функции необходимо вернуть NaN.</p>
+    <p>Параметр type отвечает за выбор чисел для подсчета суммы. Он может быть одним из 3-х значений: "odd", "even" и "". Если type равняется "odd", то в сумму должны входить только нечетные числа, "even" - четные числа, пустая строка "" - все числа. </p>
+    <p>Код:<pre><code>
+      let inputNumber = +(prompt("Введите число:").trim());
+      let inputType = prompt("Введите even или odd для определения требуемого порядка пересчета чисел").trim().toLowerCase();
+
+      function getSumOfNumbers(number, type) {
+        let sum = 0;
+        if (!number) {
+          return NaN;
+        } else if (type === "odd") {
+          for (let i = 1; i <= number; i+=2) {
+            sum += i;
+          }
+        } else if (type === "even") {
+          for (let i = 0; i <= number; i+=2) {
+            sum += i;
+          }    
+        } else {
+          for (let i = 0; i <= number; i++) {
+            sum += i;
+          }
+        }
+        return sum;
+      };
+
+      alert(getSumOfNumbers(inputNumber, inputType));
+      </code></pre>
+    </p>
+  </body>
 </html>
