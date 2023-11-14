@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task1.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 9: Массивы</h3>
+    <p>Работа с <code>function declaration</code>, <code>shift()</code>, <code>pop()</code>, <code>do ... while ...</code>.</p>
+    <p>Задание 1: разработать проект системы очередей. Часть клиентов обслужены, часть ушли из-за перерыва.</p>
+    <p>Код:<pre><code>
+      const peopleWaiting = ['Кристина', 'Олег', 'Кирилл', 'Мария', 'Светлана', 'Артем', 'Глеб'];
+
+      function giveParcel (name) {
+        let servedClientName = peopleWaiting.shift();
+        alert(`${servedClientName} получил(а) посылку. В очереди осталось ${peopleWaiting.length} человек.`);
+      }
+
+      giveParcel(peopleWaiting);
+      giveParcel(peopleWaiting);
+      giveParcel(peopleWaiting);
+
+      console.log(peopleWaiting.length);
+
+      function leaveQueueWithoutParcel() {
+        do {
+          let unservedClientName = peopleWaiting.pop();
+          alert(`${unservedClientName} не получил(а) посылку и ушел(ла) из очереди`);
+        } while (peopleWaiting.length > 0);
+      }
+
+      leaveQueueWithoutParcel()
+
+      console.log(peopleWaiting.length);
+      </code></pre>
+    </p>
+  </body>
+</html>
