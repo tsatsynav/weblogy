@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result | School - практика</title>
+    <script src="task3.js" defer></script>
+  </head>
+  <body>
+    <h1>Result | School - практика</h1>
+    <h2>Модуль 1. База JavaScript</h2>
+    <h3>Урок 9: Массивы</h3>
+    <p>Работа с <code>prompt()</code>, <code>alert()</code>, <code>findIndex()</code>.</p>
+    <p>Задание 3: С помощью функции prompt() вам необходимо запрашивать название кофе. Передайте в prompt() сообщение: “Поиск кофе по названию:”. Сохраните значение, которое ввел пользователь в переменную coffeeName.</p>
+    <p>Если введенное пользователем название кофе существует, то отобразите сообщение с помощью alert(): “Держите ваш любимый кофе coffee. Он number-й по популярности в нашей кофейне.”, где coffee - название найденного кофе, number - номер найденного кофе в массиве coffees. Если же кофе не был найден, то отобразите сообщение: “К сожалению, такого вида кофе нет в наличии”.</p>
+    <p>Код:<pre><code>
+      const coffees = ['Latte', 'Cappuccino', 'Americano'];
+
+      let coffeeTitle= prompt("Поиск кофе по названию:").toLowerCase().trim();
+      let normalizedCoffeeTitle = coffeeTitle[0].toLocaleUpperCase() + coffeeTitle.slice(1);
+
+      function getIndexOfCoffee(arg) {
+        let foundCoffee = coffees.findIndex((item) => {
+          return item === arg;
+        });
+        
+        let normalizedCoffeePosition = foundCoffee + 1;
+        
+        if (normalizedCoffeePosition) {
+          alert(`Держите ваш любимый кофе ${normalizedCoffeeTitle}. Он ${normalizedCoffeePosition}-й по популярности в нашей кофейне.`);
+        } else {
+          alert(`К сожалению, такого вида кофе нет в наличии.`);
+        }
+      }
+
+      getIndexOfCoffee(normalizedCoffeeTitle);
+      </code></pre>
+    </p>
+  </body>
+</html>

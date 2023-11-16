@@ -10,10 +10,22 @@
     <h1>Result | School - практика</h1>
     <h2>Модуль 1. База JavaScript</h2>
     <h3>Урок 9: Массивы</h3>
-    <p>Работа с <code>function declaration</code>, <code>shift()</code>, <code>pop()</code>, <code>do ... while ...</code>.</p>
-    <p>Задание 2: .</p>
+    <p>Работа с <code>function declaration</code>, <code>unshift()</code>, <code>for</code>.</p>
+    <p>Задание 2: Вам необходимо создать функцию getSumOfSequence(), которая будет создавать массив из чисел и высчитывать сумму первого и последнего элементов массива.</p>
+    <p>Функция принимает в себя один параметр number. Используя этот параметр, нужно создать массив из чисел от 1 до number. Для заполнения массива элементами используйте цикл for (например, если был передан number равный 5, то массив должен выглядеть следующим образом: [1, 2, 3, 4, 5]).</p>
     <p>Код:<pre><code>
+      function getSumOfSequence(num) {
+        let array = [];
+        for(let i = num; i > 0; i -= 1) {
+          array.unshift(i);
+          //console.log(array);
+        }
       
+        return array[0] + array[array.length - 1];
+      
+      }
+      
+      console.log(getSumOfSequence(10));
       </code></pre>
     </p>
   </body>
