@@ -10,11 +10,20 @@
     <h1>Result | School - практика</h1>
     <h2>Модуль 1. База JavaScript</h2>
     <h3>Урок 9: Массивы</h3>
-    <p>Работа с <code>prompt()</code>, <code>alert()</code>, <code>findIndex()</code>.</p>
+    <p>Работа с <code>.map()</code>, <code>.forEach()</code>.</p>
     <p>Задание 4: У вас изначально есть 2 массива: coffees (хранит названия кофе) и prices (хранит цены на кофе). Индексы для названий кофе и цен взаимосвязаны. т.е. “Latte” стоит 1.5 евро, “Cappuccino” - 1 евро, и т.д.</p>
     <p>Необходимо создать новый массив updatedPrices, который будет содержать те же числа из массива prices, но только увеличенные на 0.5.</p>
     <p>Код:<pre><code>
-      
+      const coffees = ["Latte", "Cappuccino", "Americano"];
+      const prices = [1.5, 1, 2];
+
+      const updatedPrices = prices.map((item) => {
+        return item + 0.5;
+      });
+
+      coffees.forEach((item, index) => {
+        alert(`Кофе ${item} сейчас стоит ${updatedPrices[index]} евро`);
+      });
       </code></pre>
     </p>
   </body>
