@@ -1,147 +1,89 @@
 /* < - - - - - - - - - - COMMON STYLES - - - - - - - - - - > */
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto400.woff2") format("woff2"),
-    url("../fonts/Roboto400.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto500.woff2") format("woff2"),
-    url("../fonts/Roboto500.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto900.woff2") format("woff2"),
-    url("../fonts/Roboto900.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
   box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  vertical-align: top;
+  width: 100%;
 }
 
 html {
-  height: 100%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-  color: #445964;
-  padding: 0 15px;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
-.main-page {
-  flex-grow: 1;
-}
-
-.wrapper {
-  max-width: 1300px;
-  margin: 15px auto 0;
-  box-shadow: 0 0 15px 0 #00000033;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  border-radius: 10px 10px 0 0;
-}
-
-.wrapper-inner {
-  padding: 0 63px;
-}
-
-.page-title {
-  margin-bottom: 10px;
-  font-size: 28px;
-  font-weight: 900;
-  color: #dc143c;
-}
-
-.page-title-link:visited,
-.page-title-link:hover,
-.page-title-link:active {
-  color: #dc143c;
-}
-
-.page-subtitle {
-  padding-left: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  border-left: 15px solid #dc143c;
-}
-
-.page-subtitle-mb {
-  margin-bottom: 25px;
-}
-
-.page-descr {
-  color: #dc143c;
+  block-size: 100%;
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 1400px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  block-size: 100%;
+  margin: 30px auto;
+  color: #445964;
+  font-family: "IBM Plex Mono", serif;
+  font-size: 24px;
+}
+
+.page-title {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 900;
+  padding-inline-start: 10px;
+  text-transform: uppercase;
+  border-left: 30px solid #dc143c;
+}
+
+.page-text {
+}
+
+.text-special {
+  color: #dc143c;
 }
 
 /* < - - - - - - - - - - MAIN STYLES - - - - - - - - - - > */
@@ -149,45 +91,60 @@ body {
 /* HEADER */
 
 .header {
-  padding-top: 50px;
-  margin-bottom: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-side {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-description {
+  display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
 }
 
 /* MAIN */
-/* SECTION LESSONS */
-.lessons__item {
-  margin-bottom: 25px;
-}
 
-.lessons__item:last-child {
-  margin-bottom: 0;
-}
-
-.lessons__item-mr {
-  margin-right: 35px;
-}
-
-.lesson__item-pt {
-  padding-top: 35px;
-}
-
-.lesson__item-fs {
-  font-size: 16px;
-}
-
-.just {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.direction {
+.main {
+  display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
-.code-style {
-  background-color: gray;
-  padding: 3px;
-  border-radius: 5px;
-  color: white;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 100px;
+  padding-block-end: 100px;
+}
+
+.hero__info {
+  max-inline-size: 576px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.hero__text {
+}
+
+.hero__image {
+  inline-size: 500px;
+}
+
+.practice {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-block-start: 100px;
+  padding-block-end: 100px;
 }

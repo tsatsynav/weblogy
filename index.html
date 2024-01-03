@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,44 +9,93 @@
       content="html, css, js, javascript, web, webdev, frontend, backend, fullstack"
     />
     <meta name="description" content="It's web-developer practice web-site" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>WEBLOGY about WebDev</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>WEBLOGY - сайт для практики</title>
   </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header wrapper-inner">
-        <h1 class="page-title">WEBLOGY</h1>
-        <h2 class="page-subtitle">This site for web-development practice</h2>
-      </header>
-      <main class="main wrapper-inner">
-        <section class="lessons flex">
-          <ul class="lessons__list">
-            <li class="lessons__item">
-              <a href="pages/r_s/rs.html" class="lessons__link"> R|S </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> F|L </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> S|B </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> N|L </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> H|A </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> Y|P </a>
-            </li>
-            <li class="lessons__item">
-              <a href="" class="lessons__link"> Y|P </a>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer class="footer-page"></footer>
-    </div>
+  <body class="page">
+    <header class="header">
+      <div class="header__logo-side">
+        <a class="header__logo-link" href="index.html">
+          <img
+            class="header__logo"
+            src="./images/logo.png"
+            alt="Логотип сайта"
+          />
+        </a>
+        <div class="header__logo-description">
+          <h1 class="page-title">Веб-разработка</h1>
+          <h2 class="page-subtitle">практика</h2>
+        </div>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link"> Y|P </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> R|S </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> S|B </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> H|A </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> N|L </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> G|B </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link"> F|L </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__info">
+          <p class="page-text">
+            <h2 class="page-subtitle visually-hidden">
+              О сайте
+            </h2>
+            Всем привет! <br />
+            Этот сайт сделан для отработки практических навыков в разработке
+            сайтов fullstack-разработчиком. <br />
+            Сайт не призван быть красивым или в полной мере соответствующим
+            правилам веб-разработки.
+          </p>
+          <h2 class="page-subtitle">html css javascript</h2>
+        </div>
+        <img
+          class="hero__image"
+          src="./images/main_theme.svg"
+          alt="Разработчик сидит за компьютером и разрабатывает сайты с использованием технологий html, css, javascript."
+        />
+      </section>
+      <section class="practice">
+        <h2 class="page-subtitle">
+          практика
+        </h2>
+        <ul class="practice__list">
+          <li class="practice__item">
+            <h2 class="page-subtitle">
+              практическая работа по теории от <span class="text-special">Y|P</span>
+            </h2>
+            <ul>
+              <li>
+                <a href="">
+                  Практическая работа № 1: Оно тебе надо
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
