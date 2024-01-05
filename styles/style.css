@@ -52,9 +52,9 @@ html {
 .page {
   display: flex;
   flex-direction: column;
-  max-inline-size: 1400px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+  max-inline-size: 1190px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
   block-size: 100%;
   margin: 30px auto;
   color: #445964;
@@ -145,6 +145,25 @@ html {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding-block-start: 100px;
   padding-block-end: 100px;
+}
+
+.practice__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.practice__item .page-subtitle {
+  margin-block-end: 15px;
+}
+
+.practice__task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.practice__card-list {
+  display: flex;
 }
