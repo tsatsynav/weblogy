@@ -161,7 +161,7 @@ html {
 .practice__task-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .practice__task-link {
