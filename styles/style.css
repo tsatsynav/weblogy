@@ -52,9 +52,9 @@ html {
 .page {
   display: flex;
   flex-direction: column;
-  max-inline-size: 1190px;
-  padding-inline-start: 25px;
-  padding-inline-end: 25px;
+  max-inline-size: 1170px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
   block-size: 100%;
   margin: 30px auto;
   color: #445964;
@@ -164,6 +164,41 @@ html {
   gap: 30px;
 }
 
+.practice__task-item {
+  padding-block-start: 5px;
+  padding-block-end: 5px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.practice__card {
+  max-inline-size: 250px;
+  min-inline-size: 150px;
+}
+
+.practice__card-title {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .practice__card-list {
   display: flex;
+  gap: 5px;
+}
+
+.practice__card-description {
+  line-height: 170%;
+  font-size: 16px;
+}
+
+.span-code {
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+  padding-block-start: 5px;
+  padding-block-end: 5px;
+  background-color: #445964;
+  color: #fff;
+  border-radius: 5px;
 }
